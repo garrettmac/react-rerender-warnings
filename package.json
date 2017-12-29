@@ -1,0 +1,50 @@
+{
+  "name": "react-rerender-warnings",
+  "version": "0.0.1",
+  "description": "avoid rerender with rerender warnings- dont update react if you dont have to",
+  "scripts": {
+    "prepublish": "yarn run build",
+    "build": "babel src -d build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "main": "build/index.js",
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/garrettmac/react-rerender-warnings.git"
+  },
+  "keywords": [
+    "react",
+    "rerender",
+    "render",
+    "plugin",
+    "util",
+    "development",
+    "logging"
+  ],
+  "author": "garrettmac <garrett@garrettmac.io> (https://garrettmac.io)",
+  "bugs": {
+    "url": "https://github.com/garrettmac/react-rerender-warnings/issues"
+  },
+  "homepage": "https://github.com/garrettmac/react-rerender-warnings#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2016": "^6.24.1",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-latest": "^6.24.1",
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.0.0",
+    "semantic-release": "^8.0.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "lowbar": "^0.8.1"
+  }
+}
