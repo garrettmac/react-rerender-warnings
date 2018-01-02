@@ -1,6 +1,6 @@
 {
   "name": "react-rerender-warnings",
-  "version": "0.0.1",
+  "version": "0.7.0",
   "description": "avoid rerender with rerender warnings- dont update react if you dont have to",
   "scripts": {
     "prepublish": "yarn run build",
